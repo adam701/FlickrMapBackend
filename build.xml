@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Rsync With Remote Host" basedir="." default="rsync">
+    <description>Builder for eclipse to rsync with remote host on every save</description>
+    
+    <!-- local source directory for rsync (read from this directory) -->
+    <property name="rsync.source.dir" value="${basedir}"/>
+    
+    <!-- remote rsync host -->
+    <property name="rsync.destination.host" value="yourshore.corp.gq1.yahoo.com"/>
+    
+    <!-- remote rsync directory (write to this directory) -->
+    <property name="rsync.destination.dir" value="/home/adam701/remoteSync"/>
+    
+    <!-- filepath to the ssh key-->
+    <property name="rsync.ssh.key" value="/home/adam701/.ssh/authorized_keys"/>
+    
+    <!-- ssh user to login to remote -->
+    <property name="rsync.ssh.user" value="adam701"/>
+    
+    <target name="rsync">
+        <echo message="Rsync source:"/>
+        <echo message="${rsync.source.dir}"/>
+        <echo message="Rsync destination:"/>
+        <echo message="${rsync.ssh.user}@${rsync.destination.host}:${rsync.destination.dir}"/>
+        <exec dir="." executable="rsync">
+            <arg value="-arv"/>
+            
+            <!-- exclude all hidden files and directories -->
+            <arg line="--exclude='.*'"/>
+            
+            <!-- exclude build.xml and rsync.xml -->
+            <arg line="--exclude='build.xml'"/>
+            <arg line="--exclude='/target/'"/>
+            
+            <!-- variable that holds the filepath to the ssh key -->
+            <arg line="-e &quot;ssh -i ${rsync.ssh.key} &quot;"/>
+            
+            <!-- local directory that is the source for the rsync -->
+            <arg value="${rsync.source.dir}"/>
+            
+            <!-- remote host and directory destination for rsync -->
+            <arg value="${rsync.ssh.user}@${rsync.destination.host}:${rsync.destination.dir}"/>
+        </exec>
+    </target>
+    
+</project>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="writeknow-lm" name="com.chen.hello.jersey.CityRequestSmokeTest" tests="1" failures="0" timestamp="16 Aug 2013 15:52:27 GMT" time="11.074" errors="0">
+  <testcase name="testIT" time="9.988" classname="com.chen.hello.jersey.CityRequestSmokeTest"/>
+</testsuite>

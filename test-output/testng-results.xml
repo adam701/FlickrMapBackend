@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="22905" started-at="2013-08-09T00:38:20Z" finished-at="2013-08-09T00:38:43Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="22905" started-at="2013-08-09T00:38:20Z" finished-at="2013-08-09T00:38:43Z">
+      <class name="com.chen.hello.testHelloWorld">
+        <test-method status="PASS" signature="testHelloWorld1()[pri:0, instance:com.chen.hello.testHelloWorld@7b01e0b5]" name="testHelloWorld1" duration-ms="1" started-at="2013-08-08T17:38:42Z" description="test Hello World" finished-at="2013-08-08T17:38:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHelloWorld1 -->
+      </class> <!-- com.chen.hello.testHelloWorld -->
+      <class name="com.chen.hello.jersey.CityRequestSmokeTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.chen.hello.jersey.CityRequestSmokeTest@76757fad]" name="init" is-config="true" duration-ms="589" started-at="2013-08-08T17:38:19Z" finished-at="2013-08-08T17:38:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.chen.hello.jersey.CityRequestSmokeTest@76757fad]" name="setUp" is-config="true" duration-ms="87" started-at="2013-08-08T17:38:20Z" finished-at="2013-08-08T17:38:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testIT()[pri:0, instance:com.chen.hello.jersey.CityRequestSmokeTest@76757fad]" name="testIT" duration-ms="21808" started-at="2013-08-08T17:38:20Z" description="IT test" finished-at="2013-08-08T17:38:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIT -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.chen.hello.jersey.CityRequestSmokeTest@76757fad]" name="tearDown" is-config="true" duration-ms="996" started-at="2013-08-08T17:38:42Z" finished-at="2013-08-08T17:38:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.chen.hello.jersey.CityRequestSmokeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.chen.hello.jersey.CityRequestSmokeTest" duration-ms="11074" started-at="2013-08-16T08:52:16Z" finished-at="2013-08-16T08:52:27Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="11074" started-at="2013-08-16T08:52:16Z" finished-at="2013-08-16T08:52:27Z">
+      <class name="com.chen.hello.jersey.CityRequestSmokeTest">
+        <test-method status="PASS" signature="init()" name="init" is-config="true" duration-ms="533" started-at="2013-08-16T08:52:15Z" finished-at="2013-08-16T08:52:16Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="80" started-at="2013-08-16T08:52:16Z" finished-at="2013-08-16T08:52:16Z">
+        </test-method>
+        <test-method status="PASS" signature="testIT()" name="testIT" duration-ms="9988" started-at="2013-08-16T08:52:16Z" description="IT test" finished-at="2013-08-16T08:52:26Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="1000" started-at="2013-08-16T08:52:26Z" finished-at="2013-08-16T08:52:27Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
